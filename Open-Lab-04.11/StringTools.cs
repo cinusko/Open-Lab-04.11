@@ -8,9 +8,9 @@ namespace Open_Lab_04._11
     {
         public string AlphabetSoup(string str)
         {
-            char[] jano = str.ToCharArray();
-            Array.Sort(jano);
-            return new string(jano);
+            char[] strInChar = str.ToCharArray();
+            Array.Sort(strInChar);
+            return new string(strInChar);
         }
        
     }
