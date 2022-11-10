@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Concurrent;
+using System.Reflection.Metadata.Ecma335;
 
 namespace Open_Lab_04._11
 {
@@ -6,7 +8,10 @@ namespace Open_Lab_04._11
     {
         public string AlphabetSoup(string str)
         {
-            throw new NotImplementedException();
+            char[] jano = str.ToCharArray();
+            Array.Sort(jano);
+            return new string(jano);
         }
+       
     }
 }
